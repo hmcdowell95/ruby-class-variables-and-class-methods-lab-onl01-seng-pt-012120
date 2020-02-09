@@ -29,8 +29,20 @@ class Song
   end
   
   def self.genre_count
-    a = @@genres.uniq
+    a = 0
+    b = 0
     @@genres.each do |x|
-      
+      if x == "pop"
+        a += 1
+      elsif x == "rap"
+      b += 1 
+    else 
+      nil 
+    end 
+    z = {"pop" => a, "rap" => b}
+    return z 
+  end
+  
+  
 end
     
