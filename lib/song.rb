@@ -36,9 +36,10 @@ class Song
         a += 1
       elsif x == "rap"
       b += 1 
-    else 
-      nil 
-    end 
+      else 
+        nil 
+      end
+    end
     z = {"pop" => a, "rap" => b}
     return z 
   end
