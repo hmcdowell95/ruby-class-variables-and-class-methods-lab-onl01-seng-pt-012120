@@ -43,7 +43,19 @@ class Song
     z = {"pop" => a, "rap" => b}
     return z 
   end
-  
-  
+  def self.artist_count
+    a = 0 
+    b = 0 
+    @@artists.each do |x|
+      if x == "Brittany Spears"
+        a += 1
+      elsif x == "Jay-Z" 
+        b += 1 
+      else
+        nil 
+      end
+    end
+    z = {"Brittany Spears" => a, "Jay-Z" => b}
+  end
 end
     
